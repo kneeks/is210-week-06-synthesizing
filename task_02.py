@@ -20,7 +20,8 @@ def prepare_email(appointments):
         'Dear Max,\nI look forward to meeting you on March 3.\nBest\nMe']
 
     """
-    email = ('Dear {},\nI look forward to meeting with you on {}.\nBest,\nMe'.format(appointments)
-    for names in appointments:
-        email.format(appointments)
-        return email
+    email = ('Dear {},\nI look forward to meeting with you on {}.\nBest,\nMe')
+    apt = []
+    for items in appointments:
+        apt.append(email.format(items[0], items[1]))
+    return apt
